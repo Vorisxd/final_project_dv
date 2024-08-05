@@ -39,6 +39,7 @@ player_name_picker = dcc.Dropdown(
 
 #-------------------------------------------------------------------------------
 app = dash.Dash()
+server = app.server
 app.layout=html.Div(children=[
         html.H1('Ultimate 25k fifa mathes dashboard', 
                 style={'font-style':'italic', 
