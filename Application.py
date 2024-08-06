@@ -8,7 +8,7 @@ from dash.exceptions import PreventUpdate
 import plotly.io as pio
 import plotly.subplots as sp
 import plotly.graph_objects as go 
-import dash_dangerously_set_inner_html as dhtml
+
 
 
 # pio.templates.default = "plotly_dark"
