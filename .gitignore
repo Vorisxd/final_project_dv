@@ -1,1 +1,2 @@
-.myvenv/
+myvenv/
+__pycache__/
