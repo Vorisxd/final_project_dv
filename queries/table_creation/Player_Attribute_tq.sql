@@ -1,3 +1,4 @@
+/*Запрос создающий таблицу характеристик игроков*/
 CREATE TABLE if NOT EXISTS player_attributes(
     id INT NOT NULL,
     player_api_id INT NOT NULL,

@@ -1,6 +1,8 @@
 import duckdb
 from sqlalchemy import create_engine
 
+#Здесь создаются основные функции по работе с БД
+
 def execute_sql_file(db_path, sql_file_path,create_df=False):
     """
     Подключается к базе данных DuckDB и выполняет SQL-запросы из файла.
@@ -39,6 +41,17 @@ def execute_sql_file(db_path, sql_file_path,create_df=False):
 
 
 def insert_df_to_duckdb(df, db_path, table_name):
+    """
+    Загружает DataFrame в таблицу DuckDB.
+    
+    Args:
+        df (pandas.DataFrame): DataFrame, содержащий данные для загрузки.
+        db_path (str): Путь к файлу базы данных DuckDB.
+        table_name (str): Имя таблицы (в базе данных), в которую будут загружены данные.
+    
+    Returns:
+        None
+    """
     try:
         conn = duckdb.connect(database=db_path, read_only=False)
         print(f"Успешное подключение к базе данных: {db_path}")

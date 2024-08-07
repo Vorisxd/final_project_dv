@@ -2,7 +2,8 @@ import duckdb
 from connector import connect_to_duckdb
 from etl import execute_sql_file, insert_df_to_duckdb
 from df_setup import *
-# Table  amd view creation
+# По очредно создаем и заполняем данными таблицы
+
 execute_sql_file('new_duck.db','queries/table_creation/Country_tq.sql')
 insert_df_to_duckdb(country,'new_duck.db','country')
 
@@ -22,5 +23,5 @@ execute_sql_file('new_duck.db', 'queries/table_creation/Match_tq.sql')
 insert_df_to_duckdb(match, 'new_duck.db', 'match')
 
 execute_sql_file('new_duck.db', 'queries/view_creation/player_tbl_wq.sql')
-
+execute_sql_file('new_duck.db', 'queries/view_creation/matches_wq.sql')
 

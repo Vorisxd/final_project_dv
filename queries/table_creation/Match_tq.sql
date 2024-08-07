@@ -1,3 +1,4 @@
+/*Запрос который создает одну из основных табли с 25 к наигранными матчами*/
 CREATE TABLE IF NOT EXISTS match(
     id INT NOT NULL,
     country_id INT NOT NULL,

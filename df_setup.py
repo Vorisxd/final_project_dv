@@ -1,5 +1,5 @@
 import pandas as pd
-
+#Здесь создаются и редактируются датафреймы для последовательной загрузки данных в бд
 #Country df creation
 country = pd.read_csv('Source/Csvs/Country.csv')
 

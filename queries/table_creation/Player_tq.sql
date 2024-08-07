@@ -1,3 +1,4 @@
+/*Запрос создающий таблицу игроков*/
 CREATE TABLE IF NOT EXISTS player(
     id INT NOT NULL,
     player_api_id INT NOT NULL,

@@ -1,3 +1,4 @@
+/*Запрос создающий команды*/
 CREATE TABLE IF NOT EXISTS team(
     id INT NOT NULL,
     team_api_id INT NOT NULL,
